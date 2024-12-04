@@ -1,27 +1,95 @@
+/* Definir o estilo geral do corpo do site */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Cor de fundo clara */
+    color: #333; /* Cor do texto */
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
 }
 
+/* Estilo para o cabeçalho */
 header {
-    background-color: #6a1b9a;
-    color: white;
+    background-color: #6a1b9a; /* Cor roxa para o cabeçalho */
+    color: white; /* Cor do texto no cabeçalho */
     padding: 20px;
     text-align: center;
 }
 
-section#destaques {
-    margin: 20px;
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
 }
 
+/* Estilo para a navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #6a1b9a; /* Cor roxa para os títulos */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+ul li img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px; /* Bordas arredondadas nas imagens */
+    transition: transform 0.3s; /* Adiciona uma animação suave */
+}
+
+ul li img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+ul li p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333; /* Cor do texto das descrições das flores */
+}
+
+/* Estilo para o rodapé */
 footer {
     background-color: #6a1b9a;
     color: white;
     text-align: center;
     padding: 10px;
     position: fixed;
-    bottom: 0;
     width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
 }
